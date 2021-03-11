@@ -1,17 +1,20 @@
+<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>WeatherPy</title>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="style.css">-->
+    </head>
+    <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
 
-                <a class="navbar-brand" href="index.html">Web Design Challenge</a>
+                <a class="navbar-brand" href="index.html">Latitude</a>
                 <button class="navbar-toggler" data-toggle="collapse"
                     data-target="#collapse-elements" style="border:solid 2px
                     white">
@@ -24,12 +27,17 @@
                             <a class="nav-link dropdown-toggle" href="#"
                                 id="navbarDropdown" role="button"
                                 data-toggle="dropdown">Plots</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="charts/Fig1.html">Temperature</a>
-                                    <a class="dropdown-item" href="charts/Fig2.html">Humidity</a>
-                                    <a class="dropdown-item" href="charts/Fig3.html">Cloudiness</a>
-                                    <a class="dropdown-item" href="charts/Fig4.html">Wind Speed</a>
-                                </div>
+                            <div class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item"
+                                    href="temperature.html">Temperature</a>
+                                <a class="dropdown-item"
+                                    href="humidity.html">Humidity</a>
+                                <a class="dropdown-item"
+                                    href="cloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item"
+                                    href="windspeed.html">Wind Speed</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="comparisons.html">Comparison</a>
@@ -42,37 +50,116 @@
                 </div>
             </div>
         </nav>
-  
-
   <div class="container">
-      <div class="row">
-        <div class="col-lg-7 col-sm-6" >
-            <h1 class="description-header" >Humidity
-            </h1>
-            <hr>
-            <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" class="description-image" />
-            <p>humidity tends to increase... </p>
-
-        </div>
-        <div class="col-lg-5 col-sm-6">
-            <h1 class="description-header">
-                Visualizations
-            </h1>
-            <a href="max-temp.html" >
-                <img src="Resources/assets/images/Fig1.png" alt="Latitude vs. max-temp" style="width:100% ;height:100%">
-            </a>
-            <a href="humidity.html" >
-                <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" style="width:100% ;height:100%" >
-            </a>
-            <a href="cloudiness.html" >
-                <img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" style="width:100% ;height:100%">
-            </a>
-            <a href="windspeed.html" >
-                <img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" style="width:100% ;height:100%">
-            </a>
-        </div>
-      </div>
+      <section class="row">
+          <div class="col-md-8">
+              <article class="description-content">
+                  <h1 class="description-header">Humidity</h1>
+                  <hr>
+                  <img src="Resources/assets/images/Fig2.png">
+                  <p>Type here..</p>
+              </article>
+          </div>
+          <div class="col-md-4">
+            <div class="card>
+                <div class="col-md-12">
+                    <h3 class="description-header">Visualizations</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-3 col-md-6">
+                            <a href="max-temp.html"
+                                data-toggle="modal"
+                                data-target="#myModal1">
+                                <img width=200px
+                                    src="Resources/assets/images/Fig1.png"
+                                    alt="Latitude vs. max-temp"
+                                    style="width:100% ;height:100%">
+                            </a>
+                            <div id="myModal1" class="modal fade"
+                                tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-body">
+                                        <img
+                                            src="Resources/assets/images/Fig1.png"
+                                            class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="cloudiness.html"
+                                data-toggle="modal"
+                                data-target="#myModal2">
+                                <img width=200px
+                                    src="Resources/assets/images/Fig2.png"
+                                    alt="Latitude vs. Cloudiness"
+                                    style="width:100% ;height:100%">
+                            </a>
+                            <div id="myModal2" class="modal fade"
+                                tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-body">
+                                        <img
+                                            src="Resources/assets/images/Fig2.png"
+                                            class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="/charts/Fig3.html"
+                                data-toggle="modal"
+                                data-target="#myModal3">
+                                <img width=200px
+                                    src="Resources/assets/images/Fig3.png"
+                                    alt="Latitude vs. Wind Speed"
+                                    style="width:100% ;height:100%">
+                            </a>
+                            <div id="myModal3" class="modal fade"
+                                tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-body">
+                                        <img
+                                            src="Resources/assets/images/Fig3.png"
+                                            class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="/charts/Fig4.html"
+                                data-toggle="modal"
+                                data-target="#myModal4">
+                                <img width=200px
+                                    src="Resources/assets/images/Fig4.png"
+                                    alt="Latitude vs. Wind Speed"
+                                    style="width:100% ;height:100%">
+                            </a>
+                            <div id="myModal4" class="modal fade"
+                                tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-body">
+                                        <img
+                                            src="Resources/assets/images/Fig4.png"
+                                            class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </section>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
