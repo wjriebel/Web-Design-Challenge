@@ -1,4 +1,10 @@
 .navbar-brand{
-    color:darkcyan !important;
-    font-family:sans-serif
+    color:white !important;
+    font-family:sans-serif;
+    align-self: center;
+}
+
+.pad-latitude{
+    padding: 5px;
+    background-color: darkcyan;
 }
